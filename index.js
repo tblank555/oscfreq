@@ -13,7 +13,7 @@ export function dsp(time)
   var note_e = 329.63;
   
   var mixed = triple_osc(note_a) * 0.4 + triple_osc(note_c) * 0.4 + triple_osc(note_e) * 0.4
-  var envelope = osc(1.0);
+  var envelope = osc(0.08);
   
   return mixed * envelope;
 }
